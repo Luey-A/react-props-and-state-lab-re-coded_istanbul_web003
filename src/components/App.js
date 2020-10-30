@@ -44,6 +44,7 @@ class App extends React.Component {
        pets: previousState.pets.map(
          x => x.id === id ? Object.assign(x, {isAdopted: true}) : x)
     },()=> console.log(this.state)))
+  }
 
   render() {
     return (
